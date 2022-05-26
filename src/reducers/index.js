@@ -2,10 +2,10 @@ import { IS_LOADING, SET_API_RESULTS, SET_INPUT_VALUE } from '../actions/actions
 
 export const initialState = {
   isLoading: false,
-  gifs: undefined,
-  keyWord: '',
-  resultsNumber: 0,
-  resultsLanguage: '',
+  gifsData: undefined,
+  keyWord: 'fatigué',
+  resultsNumber: 1,
+  resultsLanguage: 'fr',
 };
 
 const reducer = (state = initialState, action = {}) => {
@@ -18,7 +18,7 @@ const reducer = (state = initialState, action = {}) => {
     case SET_API_RESULTS:
       return {
         ...state,
-        gifs: action.gifs,
+        gifsData: action.gifsData,
       };
     case SET_INPUT_VALUE:
       return {

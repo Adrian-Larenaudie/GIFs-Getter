@@ -11,4 +11,5 @@
   - possibility to download the GIF
   - possibility to choose the application's theme 
   - store theme
+  - filter results by import date
 

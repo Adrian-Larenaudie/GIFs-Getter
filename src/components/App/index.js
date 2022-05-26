@@ -10,7 +10,7 @@ const App = () => {
 
   });
   const isLoading = useSelector((state) => state.isLoading);
-  const ApiResults = useSelector((state) => state.gifs);
+  const ApiResults = useSelector((state) => state.gifsData);
   return (
     <div className="app-container">
       <h1>Bonjour le monde !</h1>

@@ -1,3 +1,6 @@
+// This file defines all the actions that there are in this application
+// The names assigned to these actions make it possible to strongly identify their purpose
+
 export const IS_LOADING = 'IS_LOADING';
 export const SET_API_RESULTS = 'SET_API_RESULTS';
 export const GET_API_RESULTS = 'GET_API_RESULTS';
@@ -10,7 +13,7 @@ export const changeIsLoadingStatus = (bool) => ({
 
 export const setApiResults = (data) => ({
   type: SET_API_RESULTS,
-  gifs: data,
+  gifsData: data,
 });
 
 export const getApiResults = () => ({

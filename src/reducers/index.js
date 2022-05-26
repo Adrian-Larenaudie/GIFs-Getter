@@ -1,8 +1,11 @@
-import { IS_LOADING, SET_API_RESULTS } from '../actions/actions';
+import { IS_LOADING, SET_API_RESULTS, SET_INPUT_VALUE } from '../actions/actions';
 
 export const initialState = {
   isLoading: false,
   gifs: undefined,
+  keyWord: '',
+  resultsNumber: 0,
+  resultsLanguage: '',
 };
 
 const reducer = (state = initialState, action = {}) => {
@@ -17,7 +20,11 @@ const reducer = (state = initialState, action = {}) => {
         ...state,
         gifs: action.gifs,
       };
-
+    case SET_INPUT_VALUE:
+      return {
+        ...state,
+        [action.id]: action.value,
+      };
     default:
       return state;
   }

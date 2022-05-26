@@ -9,4 +9,6 @@
   - Results displayed like a list of items (cards)
   - each cards must be clicked to display more information
   - possibility to download the GIF
+  - possibility to choose the application's theme 
+  - store theme
 

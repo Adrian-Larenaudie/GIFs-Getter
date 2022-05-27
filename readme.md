@@ -1,15 +1,21 @@
-## To make a custom GIF reasearch by using https://developers.giphy.com/ API
+## Find gifs using this API: https://developers.giphy.com/
 
-**This made with React Redux Axios React-Router-Dom and an API**
+**I made it with react and redux.** 
+**I used axios to fetch the data from the API.**
+**React router dom to manage internal links and of course an API to get gifs**
 
 ### Quick Description :)
   - a form to search GIF by key words
-  - a maximum of 30 results can be displayed
-  - a load appears during data recovery
-  - Results displayed like a list of items (cards)
-  - each cards must be clicked to display more information
-  - possibility to download the GIF
+  - a loader appears during data recovery
+  - results displayed like a list of items (cards)
+  - each cards can be clicked to display more informations
+  - possibility to copy the GIF link 
   - possibility to choose the application's theme 
-  - store theme
-  - filter results by import date
+  - store theme in local storage
+  - possibility to filter results by import date
+  - button to easy scroll top
 
+## TODO
+1. set router dom and clickable gif
+2. set changing theme options (component)
+3. set scroll to top option (component)

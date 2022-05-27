@@ -2,6 +2,8 @@ import { useSelector } from 'react-redux';
 import Item from '../item';
 import './styles.scss';
 
+// A map to display <Item /> component as many times as there are results
+// Pass current index data into the Item component
 const Results = () => {
   const data = useSelector((state) => state.gifsData.data);
   return (

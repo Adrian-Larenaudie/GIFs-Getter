@@ -14,8 +14,10 @@
   - store theme in local storage
   - possibility to filter results by import date
   - button to easy scroll top
+  - button to get more results at the bottom of the results list
 
 ## TODO
-1. set router dom and clickable gif
+ DONE 1. set router dom and clickable gif
 2. set changing theme options (component)
 3. set scroll to top option (component)
+4. write some comments

@@ -1,24 +1,17 @@
 import './styles.scss';
-import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import Form from '../form';
-import Results from '../results';
-import Loader from '../loader';
+import { Routes, Route } from 'react-router-dom';
+import Home from '../home';
+import Details from '../details';
 
-const App = () => {
-  useEffect(() => {
-
-  });
-  const isLoading = useSelector((state) => state.isLoading);
-  const ApiResults = useSelector((state) => state.gifsData);
-  return (
-    <div className="app-container">
-      <h1>Bonjour le monde !</h1>
-      <Form />
-      {ApiResults !== undefined && <Results />}
-      {isLoading && <Loader />}
-    </div>
-  );
-};
+const App = () => (
+  <div className="app-container">
+    <h1>Bonjour le monde !</h1>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/gif/:slug" element={<Details />} />
+      {/* <Route path="*" element={<Error />} /> */}
+    </Routes>
+  </div>
+);
 
 export default App;

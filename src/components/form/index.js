@@ -12,21 +12,25 @@ const Form = () => {
   const resultNumber = useSelector((state) => state.resultNumber);
   const resultsLanguage = useSelector((state) => state.resultsLanguage);
 
-  // handlers methods, listen every change on field form
+  // handlers methods, listen every change on field form and submit
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(changeIsLoadingStatus(!isLoading));
     dispatch(getApiResults());
   };
+
   const onChangeKeyWord = (event) => {
     dispatch(setInputValue(event.target.value, event.target.name));
   };
+
   const onChangeResultsNumber = (event) => {
     dispatch(setInputValue(event.target.value, event.target.name));
   };
+
   const onChangeSelectLanguage = (event) => {
     dispatch(setInputValue(event.target.value, event.target.name));
   };
+
   return (
     <div className="formContainer">
       <form className="formContainer__form" onSubmit={handleSubmit}>
@@ -35,7 +39,7 @@ const Form = () => {
           <input className="formContainer__keyWordInput" id="keyWord" name="keyWord" type="text" placeholder="Mot clef" value={keyWord} onChange={onChangeKeyWord} />
         </label>
         <label className="formContainer__resultsNumberLabel" htmlFor="resultsNumber">
-          Entrez un nombre de résultats (max 30)*
+          Entrez un nombre de résultats*
           <input className="formContainer__resultsNumberInput" id="resultsNumber" name="resultsNumber" type="number" value={resultNumber} onChange={onChangeResultsNumber} />
         </label>
         <select className="formContainer__selectLanguage" name="resultsLanguage" id="resultsLanguage" defaultValue={resultsLanguage} onChange={onChangeSelectLanguage}>

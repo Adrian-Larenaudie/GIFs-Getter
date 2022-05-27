@@ -1,5 +1,5 @@
 {
-  "name": "react-modele",
+  "name": "besoin-d-un-gif",
   "homepage": "https://adrian-larenaudie.com/",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",

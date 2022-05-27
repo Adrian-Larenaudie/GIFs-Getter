@@ -9,7 +9,6 @@
   - a loader appears during data recovery
   - results displayed like a list of items (cards)
   - each cards can be clicked to display more informations
-  - possibility to copy the GIF link 
   - possibility to choose the application's theme 
   - store theme in local storage
   - possibility to filter results by import date

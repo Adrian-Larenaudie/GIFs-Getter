@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import GoingTopButton from '../goingTopButton';
 import Item from '../item';
 import './styles.scss';
 
@@ -9,9 +10,12 @@ const Results = () => {
   return (
     <div className="resultsContainer">
       <h1>Résultats de recherche</h1>
-      {data.map((item) => (
-        <Item item={item} key={item.id} />
-      ))}
+      <GoingTopButton />
+      <div className="resultsContainer__items">
+        {data.map((item) => (
+          <Item item={item} key={item.id} />
+        ))}
+      </div>
     </div>
   );
 };
